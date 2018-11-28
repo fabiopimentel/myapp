@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+500.times do
+    Post.create!(title: Faker::Movie.quote, body:Faker::Lorem.paragraph(10))
+end
